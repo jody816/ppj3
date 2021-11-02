@@ -25,7 +25,7 @@ namespace ppj3
             }
             else
             {
-                MessageBox.Show("꺼져");
+                MessageBox.Show("틀렸어용");
             }
         }
     }

@@ -135,9 +135,9 @@ namespace ppj3
                 Reservation reservation = DataManager.Reservations.Single(x => x.rTitle == "어벤져스 : 엔드게임");
                 for (int i = 1; i <= 12; i++)
                 {
-                    if (reservation.Seat.Contains("A" + i)) { checkBoxes[i].Enabled = false; }
-                    if (reservation.Seat.Contains("B" + i)) { checkBoxes[i+4].Enabled = false; }
-                    if (reservation.Seat.Contains("C" + i)) { checkBoxes[i+8].Enabled = false; }
+                    if (reservation.Seat.Contains("A" + i)) { checkBoxes[i-1].Enabled = false; }
+                    if (reservation.Seat.Contains("B" + i)) { checkBoxes[i+3].Enabled = false; }
+                    if (reservation.Seat.Contains("C" + i)) { checkBoxes[i+7].Enabled = false; }
                 }
             }
             if (comboBox1.SelectedItem.ToString() == "어바웃 타임" && DataManager.Reservations.Exists(x => x.rTitle == "어바웃 타임"))
@@ -145,9 +145,9 @@ namespace ppj3
                 Reservation reservation = DataManager.Reservations.Single(x => x.rTitle == "어바웃 타임");
                 for (int i = 1; i <= 12; i++)
                 {
-                    if (reservation.Seat.Contains("A" + i)) { checkBoxes[i].Enabled = false; }
-                    if (reservation.Seat.Contains("B" + i)) { checkBoxes[i + 4].Enabled = false; }
-                    if (reservation.Seat.Contains("C" + i)) { checkBoxes[i + 8].Enabled = false; }
+                    if (reservation.Seat.Contains("A" + i)) { checkBoxes[i-1].Enabled = false; }
+                    if (reservation.Seat.Contains("B" + i)) { checkBoxes[i + 3].Enabled = false; }
+                    if (reservation.Seat.Contains("C" + i)) { checkBoxes[i + 7].Enabled = false; }
                 }
             }
             if (comboBox1.SelectedItem.ToString() == "위 아 더 밀러스" && DataManager.Reservations.Exists(x => x.rTitle == "위 아 더 밀러스"))
@@ -155,9 +155,9 @@ namespace ppj3
                 Reservation reservation = DataManager.Reservations.Single(x => x.rTitle == "위 아 더 밀러스");
                 for (int i = 1; i <= 12; i++)
                 {
-                    if (reservation.Seat.Contains("A" + i)) { checkBoxes[i].Enabled = false; }
-                    if (reservation.Seat.Contains("B" + i)) { checkBoxes[i + 4].Enabled = false; }
-                    if (reservation.Seat.Contains("C" + i)) { checkBoxes[i + 8].Enabled = false; }
+                    if (reservation.Seat.Contains("A" + i)) { checkBoxes[i-1].Enabled = false; }
+                    if (reservation.Seat.Contains("B" + i)) { checkBoxes[i + 3].Enabled = false; }
+                    if (reservation.Seat.Contains("C" + i)) { checkBoxes[i + 7].Enabled = false; }
                 }
             }
             if (comboBox1.SelectedItem.ToString() == "너의 결혼식" && DataManager.Reservations.Exists(x => x.rTitle == "너의 결혼식"))
@@ -165,9 +165,9 @@ namespace ppj3
                 Reservation reservation = DataManager.Reservations.Single(x => x.rTitle == "너의 결혼식");
                 for (int i = 1; i <= 12; i++)
                 {
-                    if (reservation.Seat.Contains("A" + i)) { checkBoxes[i].Enabled = false; }
-                    if (reservation.Seat.Contains("B" + i)) { checkBoxes[i + 4].Enabled = false; }
-                    if (reservation.Seat.Contains("C" + i)) { checkBoxes[i + 8].Enabled = false; }
+                    if (reservation.Seat.Contains("A" + i)) { checkBoxes[i-1].Enabled = false; }
+                    if (reservation.Seat.Contains("B" + i)) { checkBoxes[i + 3].Enabled = false; }
+                    if (reservation.Seat.Contains("C" + i)) { checkBoxes[i + 7].Enabled = false; }
                 }
             }
             DataManager.Reservations.Select(x => x.rRoom == '1'.ToString());
